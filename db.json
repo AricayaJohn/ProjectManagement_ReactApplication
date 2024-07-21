@@ -1,86 +1,112 @@
 {
-    "employees": [
-      {
-        "id": 1,
-        "image": "images/Aquaman.png",
-        "name": "Jason Mamo",
-        "jobTitle": "Frontend Developer",
-        "workStatus": "Active",
-        "projects": [
-          {
-            "id": 1,
-            "name": "Website Redesign",
-            "tasks": [
-              "Design new homepage layout",
-              "Implement responsive design",
-              "Fix bugs in the CSS"
-            ]
-          },
-          {
-            "id": 2,
-            "name": "Landing Page Optimization",
-            "tasks": [
-              "Analyze user behavior",
-              "Optimize loading speed",
-              "A/B test different layouts"
-            ]
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Gal",
-        "image": "images/WonderWoman.png",
-        "jobTitle": "Backend Developer",
-        "workStatus": "On Leave",
-        "projects": [
-          {
-            "id": 3,
-            "name": "API Development",
-            "tasks": [
-              "Design RESTful APIs",
-              "Implement authentication",
-              "Write unit tests"
-            ]
-          },
-          {
-            "id": 4,
-            "name": "Database Optimization",
-            "tasks": [
-              "Optimize SQL queries",
-              "Refactor database schema",
-              "Improve indexing"
-            ]
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "name": "Ryan Ray",
-        "image": "images/GreenLantern.png",
-        "jobTitle": "Project Manager",
-        "workStatus": "Active",
-        "projects": [
-          {
-            "id": 5,
-            "name": "Client Onboarding",
-            "tasks": [
-              "Prepare onboarding materials",
-              "Schedule kickoff meetings",
-              "Coordinate with different teams"
-            ]
-          },
-          {
-            "id": 6,
-            "name": "Project Tracking System",
-            "tasks": [
-              "Define project milestones",
-              "Track progress",
-              "Generate status reports"
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+  "employees": [
+    {
+      "id": 1,
+      "image": "images/Aquaman.png",
+      "name": "Arthur Curry",
+      "jobTitle": "Frontend Developer",
+      "workStatus": "Active",
+      "projects": [
+        {
+          "id": 1,
+          "name": "Website Redesign",
+          "tasks": [
+            "Design new homepage layout",
+            "Implement responsive design",
+            "Fix bugs in the CSS"
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Landing Page Optimization",
+          "tasks": [
+            "Analyze user behavior",
+            "Optimize loading speed",
+            "A/B test different layouts"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Diana Prince",
+      "image": "images/WonderWoman.png",
+      "jobTitle": "Backend Developer",
+      "workStatus": "On Leave",
+      "projects": [
+        {
+          "id": 3,
+          "name": "API Development",
+          "tasks": [
+            "Design RESTful APIs",
+            "Implement authentication",
+            "Write unit tests"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Database Optimization",
+          "tasks": [
+            "Optimize SQL queries",
+            "Refactor database schema",
+            "Improve indexing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Alan Scott",
+      "image": "images/GreenLantern.png",
+      "jobTitle": "Project Manager",
+      "workStatus": "Active",
+      "projects": [
+        {
+          "id": 5,
+          "name": "Client Onboarding",
+          "tasks": [
+            "Prepare onboarding materials",
+            "Schedule kickoff meetings",
+            "Coordinate with different teams"
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Project Tracking System",
+          "tasks": [
+            "Define project milestones",
+            "Track progress",
+            "Generate status reports"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Bruce Wayne",
+      "image": "images/BatmanLogo.png",
+      "jobTitle": "Security Analyst",
+      "workStatus": "Active",
+      "projects": [
+        {
+          "id": 7,
+          "name": "Cybersecurity Enhancement",
+          "tasks": [
+            "Conduct security audits",
+            "Implement new security protocols",
+            "Monitor network traffic"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Vulnerability Assessment",
+          "tasks": [
+            "Identify system vulnerabilities",
+            "Recommend mitigation strategies",
+            "Perform penetration testing"
+          ]
+        }
+      ]
+    }
+  ]
+}

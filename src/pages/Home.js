@@ -19,10 +19,10 @@ function Home() {
 
    return (
        <>
-           <Navbar />
            <hr />
            <div className="Home">
                <h1>Project Web Development Tracker</h1>
+               <Navbar />
            <hr />   
             <EmployeesContainer employees={employees} />
            </div>

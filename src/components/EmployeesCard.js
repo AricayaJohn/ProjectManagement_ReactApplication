@@ -1,10 +1,10 @@
 import React from "react";
 
 
-function EmployeesCard({ employee }) {
+function EmployeesCard({ employee, onClick }) {
     console.log(employee.image)
    return (
-       <div className = "employee-card">
+       <div className = "employee-card" onClick={() => onClick(employee)}>
            <img src = {employee.image} alt = {employee.name} className = "employee-image" />
            <h2 className = "employee-name" > {employee.name} </h2>
            <p className = "employee-job" > Job Title: {employee.jobTitle} </p>

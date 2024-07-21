@@ -1,11 +1,11 @@
 import React from "react";
-import NavBar from "../components/NavBar";
+import Navbar from "../components/Navbar";
 
 function About () {
     return (
         <>
             <header>
-                <NavBar />
+                <Navbar />
             </header>   
             <main>
                 <h1>

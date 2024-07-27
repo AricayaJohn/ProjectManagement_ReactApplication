@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import EmployeesContainer from "../components/EmployeesContainer";
-
+import AddEmployee from "./AddEmployee";
 
 function Home() {
    const [employees, setEmployees] = useState([]);
-
 
    useEffect(() => {
        fetch('http://localhost:3000/employees')
@@ -17,14 +16,21 @@ function Home() {
    }, []);
 
 
+   const handleAddEmployees = (newEmployee) => {
+    setEmployees((employees) => [...employees, newEmployee])
+  }
+
    return (
        <>
            <hr />
            <div className="Home">
-               <h1>Project Web Development Tracker</h1>
+               <h1 className="home-title">Project Web Development Tracker</h1>
                <Navbar />
+               <AddEmployee onAddEmployees={handleAddEmployees} />
            <hr />   
-            <EmployeesContainer employees={employees} />
+            <EmployeesContainer 
+                employees={employees} 
+                onAddEmployees = {handleAddEmployees}/>
            </div>
        </>
    );

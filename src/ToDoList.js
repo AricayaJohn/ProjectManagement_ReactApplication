@@ -1,39 +1,40 @@
-import React from "react";
-import { useState } from "react";
+import React, {useEffect, useState} from "react";
 
-function ToDoList() {
+function ToDoList({tasks}) {
+    const [currentTasks, setCurrentTasks] = useState([])
+   const [newTask, setNewTask] = useState("")
 
-    const [tasks, setTasks] = useState(["Eat breakfast", "Take a shower", "Walk the dog"]);
-    const [newTask, setNewTask] = useState("");
+    useEffect(()=> {
+        setCurrentTasks(tasks)
+    }, [tasks])
 
 function handleInputChange( event ){
     setNewTask(event.target.value);
 }
 function addTask(){
-
     if (newTask.trim() !== ""){
-        setTasks(t => [...tasks, newTask]);
+        setCurrentTasks(t => [...t, newTask]);
         setNewTask("");
     }
 }
 function deleteTask( index ){
-    const updatedTasks = tasks.filter((_, i) => i !== index);
-    setTasks(updatedTasks);
+    const updatedTasks = currentTasks.filter((_, i) => i !== index);
+    setCurrentTasks(updatedTasks);
 }
 function moveTaskup( index ){
     if (index > 0) {
-        const updatedTasks = [...tasks];
+        const updatedTasks = [...currentTasks];
        [updatedTasks[index], updatedTasks[index -1]] = 
        [updatedTasks[index -1], updatedTasks[index]];
-       setTasks(updatedTasks);
+       setCurrentTasks(updatedTasks);
     }
 }
 function moveTaskDown( index ){
     if (index < tasks.length -1) {
-        const updatedTasks = [...tasks];
+        const updatedTasks = [...currentTasks];
        [updatedTasks[index], updatedTasks[index +1]] = 
        [updatedTasks[index +1], updatedTasks[index]];
-       setTasks(updatedTasks);
+       setCurrentTasks(updatedTasks);
     }
 }
 
@@ -54,7 +55,7 @@ function moveTaskDown( index ){
             </button>
         </div>
         <ol>
-            {tasks.map((task, index) => 
+            {currentTasks.map((task, index) => 
                 <li key = {index}>
                     <span className = "text"> {task}</span>
                     <button className = "delete-button"

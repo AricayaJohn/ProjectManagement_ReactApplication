@@ -3,20 +3,21 @@ import Navbar from "../components/Navbar";
 
 function Login () {
     return (
-        <>
+        <div className = "Login-Page">
         <header>
             <Navbar />
         </header>
-        <h1>
+        <hr />
+        <h1 className = "Login">
             Login
         </h1>
-        <form>
+        <form className = "Login-Form">
             <div>
-                <label 
-                      for = "username" >
+                <label for = "username" >
                     Username :
                 </label>
-                <input id = "username"
+                <input 
+                        id = "username"
                         type = "text"
                         name = "username"
                         placeholder = "Username">
@@ -27,7 +28,8 @@ function Login () {
                 <label for = "password">
                     Password :
                 </label>
-                <input id = "password" 
+                <input 
+                        id = "password" 
                         type = "password"
                         name = "password"
                         placeholder = "Password">
@@ -37,7 +39,7 @@ function Login () {
                 Submit
             </button>
         </form>
-        </>
+        </div>
     )
 }
 

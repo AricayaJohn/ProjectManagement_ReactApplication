@@ -13,14 +13,13 @@ function EmploeeForm({ onProjectAdded }) {
         e.preventDefault();
         if (newProject.trim() === "") return;
 
-        // First, fetch the existing employee data
         fetch(`http://localhost:3000/employees/${id}`)
             .then((response) => response.json())
             .then((data) => {
-                // Append the new project
+
                 const updatedProjects = [...data.projects, newProject];
 
-                // Send PATCH request to update projects
+
                 return fetch(`http://localhost:3000/employees/${id}`, {
                     method: "PATCH",
                     headers: {
@@ -31,7 +30,6 @@ function EmploeeForm({ onProjectAdded }) {
             })
             .then((response) => response.json())
             .then((data) => {
-                // Clear the input field and handle success
                 setNewProject("");
                 onProjectAdded();
                 console.log("Project added successfully:", data);

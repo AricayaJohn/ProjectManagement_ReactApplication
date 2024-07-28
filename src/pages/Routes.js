@@ -2,7 +2,6 @@ import App from "./App";
 import About from "./About";
 import Home from "./Home";
 import Login from "./Login";
-import EmployeesCard from "../components/EmployeesCard";
 import EmployeesContainer from "../components/EmployeesContainer";
 
 const routes = [

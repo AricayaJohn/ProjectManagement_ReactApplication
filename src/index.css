@@ -41,6 +41,7 @@
 
 body {
   background-color: hsl(0, 0%, 10%);
+  line-height: 1.6;
 }
 
 .to-do-list, .Priority {
@@ -152,4 +153,100 @@ li {
   border: 2px solid #ccc;
   width: 500px;
   background-color: white;
+}
+
+.NewEmployee-header {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 0%;
+}
+
+.new-employee-Form {
+  margin-top: -3%;
+}
+
+.new-employee-Form input {
+  font-size: 13px;
+  border-radius: 20px;
+  border: 3px solid grey;
+  padding: 10px;
+}
+
+.new-employee-Form button {
+  font-size: 15px ;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
+  border: 3px solid grey;
+  cursor: pointer;
+  transition: background-color 3.5s;
+}
+
+.new-employee-Form button:hover {
+  background-color: #5aed53d7;
+}
+
+.About h1 {
+  color: whitesmoke;
+  font-size: 4rem;
+  margin-bottom: 5px;
+}
+
+.About p {
+  font-size: 2rem;
+  color: black;
+  padding: 20px;
+}
+
+hr {
+  height: 2px;
+  background: #ddd;
+  margin: 15px;
+}
+
+.Login {
+  font-size: 2rem;
+  color: whitesmoke;
+  margin: 20px;
+}
+
+.Login-Form {
+  max-width: 400px;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.Login-Form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+}
+
+.Login-Form input[type = "text"],
+.Login-Form input[type = "password"] {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 2px solid black;
+  border-radius: 5px ;
+  font-size: 16px;
+  margin-right: 45px;
+}
+
+.Login-Form button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(38, 118, 222, 0.797);
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 1.3s;
+}
+
+.Login-Form button:hover {
+  background-color: #5aed53d7;
 }

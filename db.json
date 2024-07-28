@@ -10,7 +10,8 @@
         "Design new homepage layout",
         "Implement responsive design",
         "Fix bugs in the CSS",
-        "Call back Team Leader"
+        "Call back Team Leader",
+        "Work from home"
       ]
     },
     {
@@ -58,7 +59,8 @@
       "workStatus": "Active",
       "projects": [
         "Hire more team members",
-        "Throw emplyee party"
+        "Throw emplyee party",
+        "Email CFO"
       ]
     }
   ]

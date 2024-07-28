@@ -39,7 +39,9 @@ function EmploeeForm({ onProjectAdded }) {
 
     return (
         <>
-        <form onSubmit={handleSubmit}>
+        <form 
+            className = "Add-Task-Form"
+            onSubmit={handleSubmit}>
             <input
              type="text"
              value={newProject}

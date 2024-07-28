@@ -11,7 +11,7 @@ function EmployeesCard({ employee }) {
            <p className = "employee-job" > Job Title: {employee.jobTitle} </p>
            <p className = "employee-work-status"> {employee.workStatus} </p>
            <Link to = {`/employee-task/${employee.id}`}> 
-           View tasks 
+           View Tasks 
            </Link>
        </div>
    )
@@ -19,4 +19,4 @@ function EmployeesCard({ employee }) {
 
 
 export default EmployeesCard;
-//This component will display individual employee details
+

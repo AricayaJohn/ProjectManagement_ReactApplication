@@ -33,7 +33,7 @@ function EmploeeTask() {
 
     return (
         <>
-            <header>
+            <header className="task-header">
                 <Navbar />
             </header>
             <hr />
@@ -41,8 +41,10 @@ function EmploeeTask() {
                 <h1>Tasks for Employee: {name}</h1>
                 <h3>{jobTitle}</h3>
                 <h3>{workStatus}</h3>
-                <ul>
+                <h3>
                     Projects: 
+                </h3>
+                <ul>
                     {Array.isArray(projects) && projects.length > 0 ? (
                         projects.map((project, index) => (
                             <li key={index}>{project}</li>

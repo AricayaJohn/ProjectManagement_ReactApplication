@@ -147,14 +147,6 @@ li {
   margin-left: 10px;
 }
 
-.article {
-  margin: 5rem;
-  box-shadow: 0 0 7px 0 #ddd;
-  border: 2px solid #ccc;
-  width: 500px;
-  background-color: white;
-}
-
 .NewEmployee-header {
   color: white;
   font-size: 40px;
@@ -249,4 +241,62 @@ hr {
 
 .Login-Form button:hover {
   background-color: #5aed53d7;
+}
+
+.task-header {
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: -2%;
+}
+
+.article {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 7px 0 #ddd;
+  border: 2px solid #ccc;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.article h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.article h3 {
+  font-size: 2rem;
+  margin:  5px 0;
+}
+
+.Add-Task-Form {
+  max-width: 800px;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.Add-Task-Form input {
+  width: 96%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 2px solid black;
+  border-radius: 5px ;
+  font-size: 16px;
+  margin-right: 45px;
+}
+
+.Add-Task-Form button {
+  width: 98.5%;
+  padding: 10px;
+  background-color: rgba(38, 118, 222, 0.797);
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 1.3s;
+}
+
+.Add-Task-Form button:hover {
+  background-color: #49a044b0
 }

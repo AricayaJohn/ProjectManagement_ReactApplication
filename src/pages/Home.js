@@ -1,20 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
 import EmployeesContainer from "../components/EmployeesContainer";
+import { useEmployees } from "../pages/EmployeeContext"; 
 
 function Home() {
-  const [employees, setEmployees] = useState([]);
-
-  useEffect(() => {
-    fetch('http://localhost:3000/employees')
-      .then(response => response.json())
-      .then(data => setEmployees(data))
-      .catch(error => console.error("Error fetching employees:", error));
-  }, []);
-
-  const handleAddEmployees = (newEmployee) => {
-    setEmployees((employees) => [...employees, newEmployee]);
-  };
+  const { employees } = useEmployees(); 
 
   return (
     <div className="Home">
@@ -24,7 +14,7 @@ function Home() {
       <hr />
       <EmployeesContainer 
         employees={employees} 
-        onAddEmployees={handleAddEmployees} />
+      />
     </div>
   );
 }

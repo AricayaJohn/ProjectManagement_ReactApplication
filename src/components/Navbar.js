@@ -17,7 +17,7 @@ function Navbar () {
       </NavLink>
 
       <NavLink 
-        to="/add-employee" // lowercase and hyphenated
+        to="/add-employee" 
         className = "nav-link">
         Add Employee
       </NavLink>

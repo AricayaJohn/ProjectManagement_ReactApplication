@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import { useEmployees } from "../pages/EmployeeContext"; // Import useEmployees to access the context
 
-function AddEmployee({ onAddEmployees }) {
+function AddEmployee() {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [jobTitle, setJobTitle] = useState("");
   const [workStatus, setWorkStatus] = useState("");
 
+  const { addEmployee } = useEmployees(); 
+
   const handleSubmit = (e) => {
     e.preventDefault();
-
 
     fetch('http://localhost:3000/employees', {
       method: "POST",
@@ -20,7 +22,8 @@ function AddEmployee({ onAddEmployees }) {
     })
     .then((r) => r.json())
     .then((data) => {
-      onAddEmployees(data);
+  
+      addEmployee(data);
       setName("");
       setImage("");
       setJobTitle("");

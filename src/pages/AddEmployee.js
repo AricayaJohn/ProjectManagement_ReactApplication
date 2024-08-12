@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import { useEmployees } from "../pages/EmployeeContext"; // Import useEmployees to access the context
+import { useEmployees } from "../pages/EmployeeContext"; 
 
 function AddEmployee() {
   const [name, setName] = useState("");
